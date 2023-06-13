@@ -1,0 +1,31 @@
+.section {
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  @include mq(tablet) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+.section__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.125;
+  color: var(--title-cl);
+  margin-bottom: 32px;
+
+  @include mq(tablet) {
+    margin-bottom: 40px;
+  }
+
+  @include mq(desktop) {
+    font-size: 52px;
+    margin-bottom: 80px;
+  }
+}
